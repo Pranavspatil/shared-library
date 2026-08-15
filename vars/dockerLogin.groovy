@@ -1,5 +1,5 @@
 def call( String dockerHubUser, String dockerHubPassword ){
 
-  docker login -u dockerHubUser -p dockerHubPassword
+  sh ' echo '${dockerPassword}' | docker login -u '${dockerHubUser}' -p '${dockerHubPassword}'
   
   ]
